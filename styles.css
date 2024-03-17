@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.header-image {
+    text-align: center;
+    height: auto;
+}
+
+.header-image img {
+    width: 100%; 
+    height: 450px; 
+    border: #000 ;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; 
+}
+
+.what-we-do {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px; 
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 400px; 
+    }
+}
+
+.card1{
+    animation: slideInFromLeft 2s ease forwards ;
+}
+
+.card2{
+    animation: slideInFromRight 3s ease forwards ;
+}
+
+.card3{
+    animation: slideInFromLeft 5s ease forwards;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity:0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes slideInFromRight{
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
